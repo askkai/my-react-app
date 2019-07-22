@@ -13,7 +13,7 @@ a {
 }
 
 .Hero{
-  background: url('../images/joanna-kosinska-1_CMoFsPfso-unsplash.jpg');
+  background: url('../images/Polygon4.png');
   height:920px;
   background-size:cover;
   background-position: center;
@@ -24,4 +24,11 @@ a {
   max-width: 500px;
   padding: 150px 50px;
   text-align: center;
+}
+
+.Hero h1 {
+  margin: 0;
+  color: white;
+  font-size: 60px;
+  line-height: 1.2;
 }
