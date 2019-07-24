@@ -15,7 +15,6 @@ const IndexPage = () => (
         <Link to="/page-2/">Watch the video</Link>
       </div>
     </div> 
-
   </div>
 )
 
