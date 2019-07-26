@@ -13,9 +13,9 @@ const IndexPage = () => (
     <div className="Hero">
       <div className="HeroGroup">
         <h1>Nice to meet you</h1>
-        <p>I'm fine, thank u</p>
-        <p>And u?</p>
-        <Link to="/page-2/">Watch the video</Link>
+        <p>I am Wongkai</p>
+        <p>A UX/UI Designer</p>
+        <Link to="/page-2/">read more</Link>
         <div className="Logos">
           <img src={require('../images/logo-sketch.png')} width="50" />
           <img src={require('../images/logo-figma.png')} width="50" />
@@ -44,19 +44,19 @@ const IndexPage = () => (
         <Card
         title="Design System"
         text="10 sectionss"
-        Image={require('../images/wallpaper.jpg')} />
+        image={require('../images/wallpaper.jpg')} />
         <Card
         title="React for Designers"
         text="12 sectionss"
-        Image={require('../images/wallpaper.jpg')} />
+        image={require('../images/wallpaper.jpg')} />
         <Card
         title="Sound Design"
         text="12 sectionss"
-        Image={require('../images/wallpaper.jpg')} />
+        image={require('../images/wallpaper.jpg')} />
         <Card
         title="ARKit 2"
         text="12 sectionss"
-        Image={require('../images/wallpaper.jpg')} />
+        image={require('../images/wallpaper.jpg')} />
      </div>
     </div>
   </div>
