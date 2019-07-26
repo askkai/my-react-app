@@ -2,10 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
-import Header from "../components/header";
 import Card from "../components/Card";
+import Section from "../components/Section"
 
 const IndexPage = () => (
   <div>
@@ -39,12 +37,12 @@ const IndexPage = () => (
       </div>
     </div>
     <div className="Cards">
-      <h2>11 courses, more coming</h2>
+      <h2>5 Projects, more coming</h2>
       <div className="CardGroup">
         <Card
         title="Design System"
         text="10 sectionss"
-        image={require('../images/wallpaper.jpg')} />
+        image={require('../images/Planes30.png')} />
         <Card
         title="React for Designers"
         text="12 sectionss"
@@ -59,6 +57,12 @@ const IndexPage = () => (
         image={require('../images/wallpaper.jpg')} />
      </div>
     </div>
+    <Section 
+      image={require('../images/Polygon28.png')}
+      logo={require('../images/logo-react.png')}
+      title="React for Designers"
+      text="fadadsdfsdfsdfdsfs"
+     />
   </div>
 )
 
