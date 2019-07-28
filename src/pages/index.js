@@ -5,6 +5,29 @@ import Layout from "../components/layout"
 import Card from "../components/Card";
 import Section from "../components/Section"
 import Wave from "../components/Wave";
+import staticdata from "../../staticdata.json"
+import Cell from "../components/Cell";
+import styled from "styled-components"
+
+const SectionCaption = styled.p`
+  font-weight: 600px;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align:center;
+  color:#94A4BA;
+`
+
+const SectionCellGroup =styled.div`
+  max-width: 800px;
+  margin:0 auto 100px;
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-column-gap: 20px;
+
+  @media (max-width:800px) {
+    grid-template-columns: repeat(1,1fr);
+  }
+`
 
 const IndexPage = () => (
   <div>
@@ -55,6 +78,14 @@ const IndexPage = () => (
       dfsdfdsdfsdfsdfdsdfsdfsdfdsdfsdfsdfdsdfsdfsdfdsdfsdfs
       dfdsdfsdfsdfdsdfsdfsdfdsdfsdfsdfdsdfsdfsdfdsfadadsddsfs"
      />
+     <SectionCaption>12 Articles</SectionCaption>
+     <SectionCellGroup>
+      {staticdata.cells.map(cell => (
+        <Cell 
+          title={cell.title}
+          image={cell.image} />
+      ))}
+     </SectionCellGroup>
   </div>
 )
 
