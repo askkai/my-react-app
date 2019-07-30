@@ -11,7 +11,6 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
-import Helmet from "react-helmet"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -28,13 +27,6 @@ const Layout = ({ children }) => {
 
   return (
       <div>
-        <Helmet 
-          title={data.site.siteMetadata.title}
-          meta={[
-            { name: 'description',content: data.site.siteMetadata.description },
-            { name: 'keywords',content: data.site.siteMetadata.keywords},
-          ]}
-         />
         <Header></Header>
       </div>
   )

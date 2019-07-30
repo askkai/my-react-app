@@ -13,19 +13,20 @@ const SectionCaption = styled.p`
   font-weight: 600px;
   font-size: 18px;
   text-transform: uppercase;
+  color: #94A4BA;
   text-align:center;
-  color:#94A4BA;
 `
 
-const SectionCellGroup =styled.div`
+const SectionCellGroup = styled.div`
   max-width: 800px;
-  margin:0 auto 100px;
-  display:grid;
+  margin: 0 auto 100px;
+  display: grid;
   grid-template-columns: repeat(2,1fr);
   grid-column-gap: 20px;
+  padding: 0 20px;
 
   @media (max-width:800px) {
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: 1fr;
   }
 `
 
@@ -78,13 +79,13 @@ const IndexPage = () => (
       dfsdfdsdfsdfsdfdsdfsdfsdfdsdfsdfsdfdsdfsdfsdfdsdfsdfs
       dfdsdfsdfsdfdsdfsdfsdfdsdfsdfsdfdsdfsdfsdfdsfadadsddsfs"
      />
-     <SectionCaption>12 Articles</SectionCaption>
+     <SectionCaption>12 Aritcles</SectionCaption>
      <SectionCellGroup>
       {staticdata.cells.map(cell => (
         <Cell 
-          title={cell.title}
-          image={cell.image} />
-      ))}
+        title={cell.title}
+        image={cell.image} />
+        ))}
      </SectionCellGroup>
   </div>
 )
