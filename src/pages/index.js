@@ -51,7 +51,7 @@ const IndexPage = () => (
       </div>
     </div>
     <div className="Cards">
-      <h2>5 Projects, more coming</h2>
+      <h2>4 Projects, more coming</h2>
       <div className="CardGroup">
         <Card
         title="Design System"
