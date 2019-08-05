@@ -70,6 +70,14 @@ const IndexPage = () => (
         title="ARKit 2"
         text="12 sectionss"
         image={require('../images/wallpaper.jpg')} />
+        <Card
+        title="ARKit 2"
+        text="12 sectionss"
+        image={require('../images/wallpaper.jpg')} />
+        <Card
+        title="ARKit 2"
+        text="12 sectionss"
+        image={require('../images/wallpaper.jpg')} />
      </div>
     </div>
     <Section 

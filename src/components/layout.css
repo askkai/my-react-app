@@ -13,10 +13,11 @@ a {
 }
 
 .Hero{
-  background: url('https://cl.ly/3df1930f3408/download/Polygon4.png');
   height:920px;
   background-size:cover;
-  background-position: center;
+  background-position: 50% center;
+  background-image: url('https://cl.ly/a6ea765910f8/Polygon4.png'); 
+  z-index: 0;
   position: relative;
 }
 
@@ -123,7 +124,7 @@ a {
 }
 
 .CardGroup {
-  margin: 50px 40px 100px;
+  margin: 50px 40px 130px;
   display: grid;
   grid-template-columns: repeat(4,1fr);
   grid-gap: 40px;
