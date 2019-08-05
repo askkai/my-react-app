@@ -8,6 +8,7 @@ import Wave from "../components/Wave";
 import staticdata from "../../staticdata.json"
 import Cell from "../components/Cell";
 import styled from "styled-components"
+import Footer from "../components/Footer";
 
 
 const SectionCaption = styled.p`
@@ -88,6 +89,7 @@ const IndexPage = () => (
         image={cell.image} />
         ))}
      </SectionCellGroup>
+     <Footer />
   </div>
 )
 
