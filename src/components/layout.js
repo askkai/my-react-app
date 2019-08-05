@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
+import Footer from "./Footer";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -22,18 +23,31 @@ const Layout = ({ children }) => {
           keywords
         }
       }
+      allContentfulLink {
+        edges {
+          node {
+            title
+            url
+          }
+        }
+      }
     }
   `)
 
   return (
-      <div>
-        <Header></Header>
-      </div>
-  )
+    <>
+      <Header siteTitle={data.site.siteMetadata.title} />
+      <div>{children}</div>
+
+    </>
+    )
 }
+
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
+
+
 
 export default Layout

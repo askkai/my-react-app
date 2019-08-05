@@ -9,6 +9,7 @@ import staticdata from "../../staticdata.json"
 import Cell from "../components/Cell";
 import styled from "styled-components"
 
+
 const SectionCaption = styled.p`
   font-weight: 600px;
   font-size: 18px;
