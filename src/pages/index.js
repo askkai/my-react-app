@@ -17,6 +17,7 @@ const SectionCaption = styled.p`
   text-transform: uppercase;
   color: #94A4BA;
   text-align:center;
+  margin: 100px auto 20px;
 `
 
 const SectionCellGroup = styled.div`
@@ -83,11 +84,9 @@ const IndexPage = () => (
     <Section 
       image={require('../images/Polygon28.png')}
       logo={require('../images/logo-react.png')}
-      title="React for Designers"
-      text="fadadsdfsdfsdfdsdfsdfsdfdsdfsdfsdfdsdfsdfsdfds
-      dfsdfsdfdsdfsdfsdfdsdfsdfsdfdsdfsdfsdfdsdfsdfsdfdsdfs
-      dfsdfdsdfsdfsdfdsdfsdfsdfdsdfsdfsdfdsdfsdfsdfdsdfsdfs
-      dfdsdfsdfsdfdsdfsdfsdfdsdfsdfsdfdsdfsdfsdfdsfadadsddsfs"
+      title="Less, but better"
+      text="“Good design is innovative. Good design must be useful. Good design is aesthetic design. Good design makes a product understandable. Good design is honest. Good design is unobtrusive. Good design is long-lasting. Good design is consistent in every detail. Good design is environmentally friendly. And last but not least, good design is as little design as possible.” 
+      ― Dieter Rams"
      />
      <SectionCaption>12 Aritcles</SectionCaption>
      <SectionCellGroup>
